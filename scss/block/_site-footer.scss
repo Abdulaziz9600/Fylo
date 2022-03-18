@@ -1,0 +1,154 @@
+.site-footer{
+  background-color: rgba(11, 21, 36, 1);
+  padding-bottom: 97px;
+}
+.site-footer__list-sigin-up{
+  max-width: 863px;
+  padding-right: 77px;
+  padding-bottom: 41px;
+  padding-left: 77px;
+  padding-top: 41px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(27, 35, 48);
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.254274);
+  border-radius: 9px;
+  transform: translateY(-120px);
+}
+.site-footer__sigin-up-titel{
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+}
+.site-footer__sigin-up-text{
+  max-width: 673px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'OpenSans';
+  font-size: 14px;
+  line-height: 21px;
+}
+.site-footer__footer-inner{
+  display: flex;
+  align-items: center;
+}
+.site-footer__footer-local-text{
+  width: 314px;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'OpenSans';
+  font-size: 16px;
+  line-height: 24px;
+  
+  &::before{
+    content: "";
+    display: block;
+    background-image: url(../../img/local.png);
+    background-position: calc(50% - 0px) calc(50% + 0px);
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 18px;
+    margin-left: -27px;
+    margin-bottom: -23px;
+  }
+}
+.site-footer__our-contact{
+  margin-left: 84px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.site-footer__our-number{
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+  font-family: 'OpenSans';
+  font-size: 14px;
+  
+  &::before{
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(../../img/call.png);
+    background-position:calc(50% - 1px) ;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    margin-bottom: -4px;
+  }
+}
+.site-footer__our-email{
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+  font-family: 'OpenSans';
+  font-size: 14px;
+  
+  &::before{
+    content: "";
+    display: inline-block;
+    width: 19px;
+    height: 18px;
+    background-image: url(../../img/eamil.png);
+    background-position:calc(50% - 1px) ;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    margin-bottom: -4px;
+  }
+  
+}
+.others-net-list{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin-left: 114px;
+}
+
+@include breakpoint-down(375px){
+  
+  .site-footer__our-contact{
+    margin-right: auto;
+    margin-left: 30px;
+  }
+  .site-footer__list-sigin-up{
+    width: 336px;
+    padding-bottom: 37px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 41px;
+    display: flex;
+    flex-direction: column;
+  }
+  .site-footer__sigin-up-titel{
+    text-align: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px
+  }
+  
+  .site-footer__sigin-up-titel{
+    width: 280px;
+    text-align: center;
+  }
+}
+
+@include breakpoint-down(375px){
+  .site-footer__footer-inner{
+    flex-direction: column;
+  }
+  
+  .site-footer__footer-local-text{
+    width: 279px;
+    font-family: 'OpenSans';
+    font-size: 16px;
+    line-height: 24px;}
+
+    .others-net-list{
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+    }
+  }

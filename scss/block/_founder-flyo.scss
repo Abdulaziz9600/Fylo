@@ -1,0 +1,114 @@
+.founder-flyo__founder-list{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+}
+.founder-flyo__founder-item-quoatation{
+  max-width: 360px;
+  padding-right: 25px;
+  padding-bottom: 26px;
+  padding-left: 26px;
+  padding-top: 40px;
+  background: #202A3C;
+  box-shadow: 5px 5px 8px rgba(56, 56, 56, 0.0991282);
+  border-radius: 3.93258px;
+  transition: 0.8s ease;
+  &::before{
+    content: "";
+    display: block;
+    background-image: url(../../img/quotationmarks.png);
+    background-position: calc(50% + 7px) calc(50% - -1px);
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 50px;
+    margin-top: -70px;
+    margin-left: -46px;
+    
+    
+  }
+  &:hover{
+    transform: scale(1.07);
+  }
+}
+.founder-flyo__founder-item {
+  max-width: 360px;
+  padding-right: 25px;
+  padding-bottom: 26px;
+  padding-left: 26px;
+  padding-top: 20px;
+  background: #202A3C;
+  box-shadow: 5px 5px 8px rgba(56, 56, 56, 0.0991282);
+  border-radius: 3.93258px;
+  transition: 0.8s ease;
+  &:hover{
+    transform: scale(1.07);
+  }
+}
+.founder-flyo__founder-text{
+  width: 309px;
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'OpenSans';
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.5px;
+}
+.founder-flyo__funder-about{
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+.founder-flyo__founders-pictures{
+  width: 24px;
+  height: 24px;
+}
+.founder-flyo__funder-name{
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'OpenSans';
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+}
+.founder-flyo__founder-info{
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'OpenSans';
+  font-size: 7px;
+  line-height: 10px;
+}
+
+@include breakpoint-down(375px){
+  .founder-flyo__founder-list{
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .founder-flyo__founder-item {
+    max-width: 280px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    padding-top: 24px;
+    transition: 0.8s ease;
+
+    &:hover{
+      transform: scale(1.07);
+    }
+    
+  }
+  
+  .founder-flyo__founder-text{
+    width: 240px;
+    font-family: 'OpenSans';
+    font-size: 10px;
+    line-height: 18px;
+  }
+}

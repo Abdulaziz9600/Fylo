@@ -1,0 +1,56 @@
+
+.advise-section__advise-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+.advise-section__advise-item{
+  margin-left: 150px;
+  margin-top: 20px;
+  text-align: center;
+}
+.advise-section__advise-titel{
+  color: rgb(255, 255, 255);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+.advise-section__advise-text{
+  width: 368px;
+  color: rgb(255, 255, 255);
+  font-family: 'OpenSans';
+  font-size: 14px;
+  line-height: 21px;
+}
+// MOBILE VERISON
+
+@include breakpoint-down(375px){
+  .advise-section__advise-list{
+    flex-direction: column;
+  }
+  .advise-section__advise-item{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .advise-section__advise-titel{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .advise-section__advise-text{
+    width: 320px;
+    font-family: 'OpenSans';
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

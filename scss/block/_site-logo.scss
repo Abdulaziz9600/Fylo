@@ -1,0 +1,19 @@
+.site-logo__logo-img{
+  width: 176px;
+  height: 52px;
+}
+.footer-logo__footer-img{
+  width: 176px;
+  height: 52px;
+}
+@include breakpoint-down(375px){
+  .footer-logo__footer-img{
+    width: 80px;
+    height: 24px;
+  }
+
+  .footer-logo__footer-img{
+    width: 176px;
+    height: 52px;
+  }
+}
