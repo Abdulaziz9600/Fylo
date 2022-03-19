@@ -562,7 +562,7 @@ template {
   background-color: #1b2330;
   background-image: url(../../img/Path.png);
   background-repeat: no-repeat;
-  background-position: calc(50% - 17px) calc(-50% - 4px);
+  background-position: calc(50% - 17px) calc(-50% + 690px);
   padding-bottom: 300px;
 }
 
